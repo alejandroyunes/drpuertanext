@@ -58,10 +58,10 @@ export default function Index({
   return (
     <div>
       <Head>
-        <title>Punkies y Cerebro P&aacute;gina Oficial</title>
+        <title>Dr Jorge Puerta P&aacute;gina Oficial</title>
         <meta
           name="description"
-          content="Punkies y Cerebro P&aacute;gina Oficial"
+          content="Dr Jorge Puerta P&aacute;gina Oficial"
         />
         <meta
           name="viewport"
