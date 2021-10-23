@@ -23,7 +23,6 @@ const Construction: FC = () => {
           <h3>En Construcci&oacute;n</h3>
         </Text>
       </Background>
-      <h3>En Construcci&oacute;n</h3>
     </>
   );
 };
