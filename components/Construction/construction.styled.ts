@@ -4,9 +4,19 @@ interface StyledHeaderProps {
   openMenu: boolean;
 }
 
+export const BackgroundTop = styled.div`
+  width: 100%;
+  height: 30vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+`;
+
 export const Background = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   background-color: #3e8a9e;
   display: flex;
   align-items: center;
@@ -15,13 +25,17 @@ export const Background = styled.div`
   h3 {
     font-size: ${({ theme }) => theme.fontSizes["4xl"]};
     padding: 24px 0;
+    text-align: center;
   }
   p {
-    font-size: ${({ theme }) => theme.fontSizes["2xl"]};
+    padding: 4px 0;
+    font-size: ${({ theme }) => theme.fontSizes["3xl"]};
+    @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
+      font-size: ${({ theme }) => theme.fontSizes["2xl"]};
+  }
   }
 `;
 
-export const Column = styled.div`
-  background-color: red;
-  display: flex;
+export const Text = styled.div`
+max-width: 600px;
 `;

@@ -1,20 +1,29 @@
 import { useEffect, useState, FC } from "react";
 
-import { Background, Column } from "./construction.styled";
+import { Background, BackgroundTop, Text } from "./construction.styled";
+import Image from "next/image";
+// import Logo from "../../public/logo.png";
 
 const Construction: FC = () => {
   return (
     <>
+      <BackgroundTop>
+        <Image
+          width={250}
+          height={100}
+          src={"/logo.png"}
+          alt="Picture of the author"
+        />
+      </BackgroundTop>
       <Background>
-        <div>
+        <Text>
+          <p>Tel: +57 4 268 5436 – Cel: 318 898 1046</p>
+          <p>Dir: Calle 4 sur #43 A 195 oficina 165</p>
+          <p>Centro Ejecutivo – Medellín, Colombia</p>
           <h3>En Construcci&oacute;n</h3>
-
-          <p>
-            Tel: +57 4 268 5436 – Cel: 318 898 1046 – Dir: Calle 4 sur #43 A 195
-            oficina 165 – Centro Ejecutivo – Medellín Colombia
-          </p>
-        </div>
+        </Text>
       </Background>
+      <h3>En Construcci&oacute;n</h3>
     </>
   );
 };
