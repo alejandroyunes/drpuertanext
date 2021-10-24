@@ -19,6 +19,11 @@ declare module "styled-components" {
     full: string;
   }
   export interface ColorType {
+    lightGray: string;
+    darkGray: string;  
+    darkerGray: string;
+
+
     blendingGray: string;
     neroGray: string;
     whiteSmoke: string;
@@ -63,7 +68,7 @@ declare module "styled-components" {
     lightBaltic: string;
     darktitle: string;
     graytitle: string;
-    lightGray: string;
+    
     // -- Special --
     dropdown: string;
     transparent: string;
@@ -72,6 +77,10 @@ declare module "styled-components" {
   export interface FontType {
     primary: string;
     secondary: string;
+    poppins: string;
+    roboto: string;
+    robotoslab: string;
+    nunito: string;
   }
 
   export interface FontSizeType {

@@ -1,15 +1,19 @@
-import { useState, useEffect } from "react";
+import { useState, FC } from "react";
 import Link from "next/link";
 
 import { HamburgerMenu, Menu, Links } from "./index.styled";
+interface StyledHeaderProps {
+  openMenu: boolean;
+}
 
-const Hamburger = () => {
+export const Hamburger: FC<StyledHeaderProps> = ({ openMenu }) => {
+  // const Hamburger = ({ openMenu }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
       <HamburgerMenu>
-        <Menu onMouseLeave={() => setMenuOpen(false)}>
+        <Menu openMenu={openMenu} onMouseLeave={() => setMenuOpen(false)}>
           <input
             type="checkbox"
             // defaultChecked={menuOpen}

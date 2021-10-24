@@ -7,7 +7,7 @@ export const DesktopNav = styled.div<StyledHeaderProps>`
   width: 100%;
   /* background-color: ${({ theme }) => theme.colors.transparent}; */
   background-color: ${({ openMenu, theme }) =>
-    openMenu ? theme.colors.primary : theme.colors.transparent};
+    openMenu ? theme.colors.darkerGray : theme.colors.transparent};
   position: ${({ openMenu }) => (openMenu ? "fixed" : "absolute")};
   animation: ${({ openMenu }) => (openMenu ? "navbar-slice-down 1s" : "none")};
   transform: ${({ openMenu }) => (openMenu ? "translate(-50%, 0)" : "none")};
@@ -22,7 +22,6 @@ export const DesktopNav = styled.div<StyledHeaderProps>`
 export const LinksWrapper = styled.div`
   margin: 0 auto;
   width: ${({ theme }) => theme.breakpoint.md};
-
   @keyframes navbar-slice-down {
     0% {
       background-color: balticSea;
@@ -43,32 +42,34 @@ export const LinksWrapper = styled.div`
 export const LinksContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     display: none;
   }
 `;
-export const Menu = styled.div`
+export const Menu = styled.div<StyledHeaderProps>`
   display: flex;
   align-items: center;
   li {
     display: inline-flex;
     padding: 0 12px;
-    font-family: ${({ theme }) => theme.fonts.primary};
-    font-size: 24px;
-    color: #fff;
+    font-family: ${({ theme }) => theme.fonts.nunito};
+    font-size: 16px;
+    color: ${({ openMenu, theme }) =>
+      openMenu ? theme.colors.white : theme.colors.darkGray};
     cursor: pointer;
     span {
       display: flex;
       padding: 0 4px;
     }
     a:hover {
-      color: ${({ theme }) => theme.colors.tertiary};
+      color: ${({ theme }) => theme.colors.primary};
     }
   }
 `;
 export const ImageMain = styled.div`
   display: flex;
+  cursor: pointer;
 `;
 ///**  Mobile Menu
 //In case mobile dropdown needs a color height.
@@ -100,8 +101,8 @@ export const MobileNav = styled.div<StyledHeaderProps>`
       openMenu ? "navbar-slice-down 1s" : "none"};
     top: ${({ openMenu }) => (openMenu ? "0" : "none")};
     z-index: ${({ theme }) => theme.zIndices.sticky};
-    /* background-color: ${({ theme, openMenu }) =>
-      openMenu ? theme.colors.black : theme.colors.transparent}; */
+    background-color: ${({ theme, openMenu }) =>
+      openMenu ? theme.colors.black : theme.colors.transparent};
     width: 100%;
     height: 60px;
     justify-content: space-between;
@@ -113,7 +114,7 @@ export const MobileLogo = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     display: flex;
     align-items: center;
-    padding: 5px 0 0 24px;
+    padding: 5px 0 0 16px;
     -webkit-tap-highlight-color: transparent;
   }
 `;

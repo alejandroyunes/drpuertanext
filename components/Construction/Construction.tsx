@@ -11,7 +11,7 @@ const Construction: FC = () => {
         <Image
           width={250}
           height={100}
-          src={"/logo.png"}
+          src={"/resources/logo/logo-darker.png"}
           alt="Picture of the author"
         />
       </BackgroundTop>

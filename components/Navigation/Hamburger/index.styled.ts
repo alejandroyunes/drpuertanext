@@ -1,16 +1,19 @@
 import styled from 'styled-components';
 
+interface StyledHeaderProps {
+  openMenu: boolean;
+}
+
 export const HamburgerMenu = styled.div`
     position: relative;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     z-index: ${({ theme }) => theme.zIndices.dropdown};
 `;
 
-export const Menu = styled.div`
+export const Menu = styled.div<StyledHeaderProps>`
     position: absolute;
     top: 16px;
     right: 0px;
-    z-index: ${({ theme }) => theme.zIndices.dropdown};;
     -webkit-user-select: none;
     user-select: none;
      input {
@@ -32,7 +35,8 @@ export const Menu = styled.div`
       right: 20px;
       margin-bottom: 5px;
       position: relative;
-      background: ${({ theme }) => theme.colors.secondary};
+      /* background: ${({ theme, openMenu }) => theme.colors.tertiary}; */
+      background: ${({ openMenu, theme }) => (openMenu ? theme.colors.white: theme.colors.darkGray)};
       border-radius: 2px;
       z-index: 1;
       transform-origin: 4px 0px;

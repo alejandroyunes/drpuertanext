@@ -17,7 +17,9 @@
     "re-carousel": "^2.4.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
     "react-switch": "^6.0.0",
+    "strapi-provider-upload-cloudinary": "^3.6.8",
     "styled-components": "^5.3.0",
     "swiper": "^7.0.3"
   },

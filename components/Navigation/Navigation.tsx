@@ -34,7 +34,26 @@ const Navigation: FC = () => {
       <DesktopNav openMenu={header}>
         <LinksWrapper>
           <LinksContainer>
-            <Menu>
+            <Link href="/">
+              <ImageMain>
+                {!header ? (
+                  <Image
+                    width={200}
+                    height={80}
+                    src={"/resources/logo/logo-darker.png"}
+                    alt="Picture of the author"
+                  />
+                ) : (
+                  <Image
+                    width={140}
+                    height={60}
+                    src={"/resources/logo/logo-white.png"}
+                    alt="Picture of the author"
+                  />
+                )}
+              </ImageMain>
+            </Link>
+            <Menu openMenu={header}>
               <ul>
                 <Link href="/">
                   <li>
@@ -43,46 +62,15 @@ const Navigation: FC = () => {
                 </Link>
                 <Link href="#noticias">
                   <li>
-                    <a>Noticias</a>
+                    <a>Dr. Puerta</a>
                   </li>
                 </Link>
                 <Link href="#discografia">
                   <li>
-                    <a>Discografía</a>
+                    <a>Galería</a>
                   </li>
                 </Link>
-              </ul>
-            </Menu>
-            <ImageMain>
-              {!header ? (
-                <Image
-                  width={150}
-                  height={100}
-                  src={"/punkieslogo.png"}
-                  alt="Picture of the author"
-                />
-              ) : (
-                <Image
-                  width={260}
-                  height={31}
-                  src={"/punkies-logo-small.png"}
-                  alt="Picture of the author"
-                />
-              )}
-            </ImageMain>
-            <Menu>
-              <ul>
-                <Link href="#inicio">
-                  <li>
-                    <a>GP</a>
-                  </li>
-                </Link>
-                <Link href="#conciertos">
-                  <li>
-                    <a>Conciertos</a>
-                  </li>
-                </Link>
-                <Link href="#contacto">
+                <Link href="#discografia">
                   <li>
                     <a>Contacto</a>
                   </li>
@@ -96,13 +84,21 @@ const Navigation: FC = () => {
       {/*  Mobile  */}
       <MobileNav openMenu={header}>
         <MobileLogo>
-          <Link href="/contact">
+          <Link href="/">
             <a>
-              <Image src="/punkieslogo.png" height={40} width={80} />
+              <Image
+                src={`${
+                  !header
+                    ? "/resources/logo/logo-darker.png"
+                    : "/resources/logo/logo-white.png"
+                } `}
+                height={60}
+                width={136}
+              />
             </a>
           </Link>
         </MobileLogo>
-        <Hamburger />
+        <Hamburger openMenu={header} />
       </MobileNav>
       {/*  Mobile  */}
     </>

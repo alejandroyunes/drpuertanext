@@ -21,12 +21,16 @@ const colors: ColorType = {
   green: "#9aca3c",
   red: "#AC1713",
 
+  lightGray: "#939393",
+  darkGray: "#555555",
+  darkerGray: "#222",
+  blue: "#3e8a9e",
   //Mobile Dropdown Color
   dropdown: "#161616",
   transparent: "transparent",
 
   /* blue */
-  blue: "#0071bc",
+
   hoki: "#637ca5",
   rockBlue: "#a0b1ce",
   brightBlue: "#2796f6",
@@ -35,7 +39,7 @@ const colors: ColorType = {
   deepBlue: "#2680eb",
 
   /* gray */
-  gray: "#919191",
+  gray: "#3e8a9e",
   abbey: "#4a4d51",
   merlin: "#3e3c39", // text color
   cottenSeed: "#b9b8b7",
@@ -55,13 +59,13 @@ const colors: ColorType = {
   whiteSmoke: "#f5f5f5", //members card background
   darktitle: "#515151",
   graytitle: "#212121",
-  blendingGray: "#f4f4f4",
+  blendingGray: "#f4f4f4", 
 
   balticSea: "#383d41", // page navigation dropdown background
   shark: "#33373d", // page navigation background
   jaguar: "#232325", // page navigation sidebar background
   lightBaltic: "#353d49",
-  lightGray: "#e8e8e8",
+
 
   purple: "#383c41", //footer background color
   brightOrange: "#ff9100",
@@ -69,13 +73,18 @@ const colors: ColorType = {
   danger: "#de1414", // form's error message
 } as ColorType;
 
-colors["primary"] = colors.black;
+colors["primary"] = colors.blue;
 colors["secondary"] = colors.white;
 colors["tertiary"] = colors.red;
 
 const fonts = {
   primary: '"Metal Mania", cursive',
   secondary: '"Lato", sans-serif',
+  nunito:'"Nunito", sans-serif',
+  poppins: '"Poppins", sans-serif',
+  roboto: '"Roboto", sans-serif',
+  robotoslab:'"Roboto Slab", serif',
+  
 };
 
 const breakpoint = {
