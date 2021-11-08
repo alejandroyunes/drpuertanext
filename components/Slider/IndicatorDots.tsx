@@ -1,6 +1,17 @@
-import React from "react";
 import PropTypes from "prop-types";
 import { Wrapper } from "./indicator.styled";
+import React, { FC } from "react";
+interface StyledHeaderProps {
+  display: string;
+  height: string;
+  width: string;
+  borderRadius: string;
+  backgroundColor: string;
+  margin: string;
+  opacity: string;
+  transitionDuration: string;
+}
+
 function Dot(props: any) {
   return (
     <span
@@ -18,7 +29,9 @@ function Dot(props: any) {
   );
 }
 
-export default function IndicatorDots(props: any) {
+// export default function IndicatorDots(props: any) {
+
+const IndicatorDots: FC<StyledHeaderProps> = (props: any) => {
   const wrapperStyle = {
     position: "absolute",
     width: "100%",
@@ -29,19 +42,15 @@ export default function IndicatorDots(props: any) {
 
   if (props.total < 2) {
     // Hide dots when there is only one dot.
-    return <div style={wrapperStyle} />;
+    return <div />;
   } else {
     return (
-      <div style={wrapperStyle}>
+      <div className="dots">
         {Array.apply(null, Array(props.total)).map((x, i) => {
           return <Dot key={i} selected={props.index === i} />;
         })}
       </div>
     );
   }
-}
-
-IndicatorDots.propTypes = {
-  index: PropTypes.number.isRequired,
-  total: PropTypes.number.isRequired,
 };
+export default IndicatorDots;

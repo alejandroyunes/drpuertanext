@@ -13,6 +13,10 @@ export const Wrapper = styled.div<EstudioProps>`
   .home {
     color: ${({ theme }) => theme.colors.primary};
   }
+  .home-second {
+    color: ${({ theme }) => theme.colors.primary};
+    text-decoration: underline;
+  }
 `;
 
 export const Container = styled.div<EstudioProps>`
@@ -24,6 +28,7 @@ export const Container = styled.div<EstudioProps>`
     bgColor === "white" ? theme.colors.secondary : theme.colors.white};
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     flex-direction: column;
+    padding-bottom: 0px;
   }
 `;
 
@@ -31,8 +36,8 @@ export const Column = styled.div`
   margin: 0 auto;
   width: 100%;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
-    margin: 0 auto 24px;
-    width: auto;
+    margin: 0 auto;
+    max-width: 400px;
     padding: 8px 24px;
   }
 `;
@@ -48,10 +53,14 @@ export const Title = styled.div<EstudioProps>`
   display: flex;
   justify-content: left;
   font-size: ${({ theme }) => theme.fontSizes.xl};
+  font-weight: 600;
   color: ${({ theme, bgColor }) =>
     bgColor === "white" ? theme.colors.white : theme.colors.secondary};
   font-family: ${({ theme }) => theme.fonts.nunito};
   padding: 8px 24px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
+    padding: 8px 0;
+  }
 `;
 
 export const Description = styled.div<EstudioProps>`
@@ -69,5 +78,8 @@ export const Description = styled.div<EstudioProps>`
     li {
       padding: 2px 0;
     }
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
+    padding: 8px 0;
   }
 `;

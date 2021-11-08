@@ -8,7 +8,13 @@ export const ImagesStylesDesktop = styled.div`
   margin: 0 auto;
   height: 100vh;
   max-height: 100%;
-
+  .dots {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    bottom: 0px;
+    text-align: center;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.lg}) {
     height: 96vh;
   }
@@ -93,5 +99,12 @@ export const ImagesStylesMobile = styled.div`
     display: block;
     margin: 0 auto;
     height: 380px;
+    .dots {
+      position: absolute;
+      width: 100%;
+      z-index: 100;
+      bottom: 0px;
+      text-align: center;
+    }
   }
 `;
