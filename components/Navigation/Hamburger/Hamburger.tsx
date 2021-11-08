@@ -38,7 +38,7 @@ export const Hamburger: FC<StyledHeaderProps> = ({ openMenu }) => {
             </Link>
             <Link href="#discografia">
               <li onClick={() => setMenuOpen(false)}>
-                <a>Discografía</a>
+                <a>Galería</a>
               </li>
             </Link>
             <Link href="/">
@@ -47,11 +47,6 @@ export const Hamburger: FC<StyledHeaderProps> = ({ openMenu }) => {
               </li>
             </Link>
             <Link href="#conciertos">
-              <li onClick={() => setMenuOpen(false)}>
-                <a>Conciertos</a>
-              </li>
-            </Link>
-            <Link href="#contacto">
               <li onClick={() => setMenuOpen(false)}>
                 <a>Contacto</a>
               </li>
