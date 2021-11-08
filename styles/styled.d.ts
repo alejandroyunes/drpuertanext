@@ -32,8 +32,9 @@ declare module "styled-components" {
     darkGray: string;
     darkerGray: string;
 
-
     lightBlue: string;
+
+    dropdown: string;
 
     white: string;
     black: string;

@@ -24,6 +24,8 @@ const colors: ColorType = {
 
   lightBlue: "#e1eaf2",
 
+  dropdown: "#161616",
+
   white: "#ffffff",
   black: "#141414",
   orange: "#ff9100",
