@@ -2,6 +2,7 @@ import "styled-components";
 
 declare module "styled-components" {
   export interface breakpointType {
+    xxs: string;
     xs: string;
     sm: string;
     md: string;
@@ -19,59 +20,26 @@ declare module "styled-components" {
     full: string;
   }
   export interface ColorType {
-    lightGray: string;
-    darkGray: string;  
-    darkerGray: string;
-
-
-    blendingGray: string;
-    neroGray: string;
-    whiteSmoke: string;
-    spaceGray: string;
-    white: string;
-    black: string;
-    orange: string;
-    green: string;
-    blue: string;
-    red: string;
-    hoki: string;
-    rockBlue: string;
-    gray: string;
-    abbey: string;
-    merlin: string;
-    cottenSeed: string;
-    doveGray: string;
-    geyser: string;
-    godGray: string;
-    mercury: string;
-    brightGray: string;
-    shuttleGray: string;
-    veryLightGrey: string;
     primary: string;
     secondary: string;
     tertiary: string;
-    danger: string;
-    balticSea: string;
-    shark: string;
-    jaguar: string;
-    mediumGray: string;
-    purple: string;
-    darkGrey: string;
-    brightOrange: string;
-    darkBrown: string;
-    brightBlue: string;
-    feintBlue: string;
-    lightBlack: string;
-    offWhite: string;
-    skyBlue: string;
-    deepBlue: string;
-    lightBaltic: string;
-    darktitle: string;
-    graytitle: string;
-    
-    // -- Special --
-    dropdown: string;
     transparent: string;
+    lightGreen: string;
+    green: string;
+    darkBlue: string;
+
+    lightGray: string;
+    darkGray: string;
+    darkerGray: string;
+
+
+    lightBlue: string;
+
+    white: string;
+    black: string;
+    orange: string;
+    red: string;
+    danger: string;
   }
 
   export interface FontType {
@@ -92,6 +60,7 @@ declare module "styled-components" {
     "2xl": string;
     "3xl": string;
     "4xl": string;
+    "4.5xl": string;
     "5xl": string;
     "6xl": string;
     "9xl": string;

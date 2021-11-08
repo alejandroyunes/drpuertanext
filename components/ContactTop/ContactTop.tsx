@@ -9,15 +9,15 @@ const ContactTop: FC = () => {
       <Wrapper>
         <Column>
           <Icon>
-            <GoLocation size="xs" />
+            <GoLocation />
           </Icon>
           <p>Calle 4 sur #43 A 195 oficina 165 – Medellín Colombia</p>
         </Column>
         <Column>
           <Icon>
-            <BsTelephoneOutbound size="xs" />
+            <BsTelephoneOutbound />
           </Icon>
-          <p>+57 4 268 5436 – Cel: 318 898 1046</p>
+          <p>Fijo: +6 04 268 5436 – Cel: 318 898 1046</p>
         </Column>
       </Wrapper>
     </WrapperData>

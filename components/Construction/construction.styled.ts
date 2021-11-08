@@ -6,12 +6,12 @@ interface StyledHeaderProps {
 
 export const BackgroundTop = styled.div`
   width: 100%;
+  padding-top: 80px;
   height: 30vh;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-
 `;
 
 export const Background = styled.div`
@@ -32,10 +32,10 @@ export const Background = styled.div`
     font-size: ${({ theme }) => theme.fontSizes["3xl"]};
     @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
       font-size: ${({ theme }) => theme.fontSizes["2xl"]};
-  }
+    }
   }
 `;
 
 export const Text = styled.div`
-max-width: 600px;
+  max-width: 600px;
 `;

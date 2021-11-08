@@ -6,13 +6,14 @@ interface TitleProps {
   title: string;
   message: string;
   backgroundColor?: string;
+  small?: boolean;
 }
 
-const Title: FC<TitleProps> = ({ title, message, backgroundColor }) => {
+const Title: FC<TitleProps> = ({ title, message, backgroundColor, small }) => {
   return (
     <>
       <TitleWrapper backgroundColor={backgroundColor}>
-        <h3>{title}</h3>
+        <h1 className={small ? "small" : ""}>{title}</h1>
         <h2>{message}</h2>
       </TitleWrapper>
     </>

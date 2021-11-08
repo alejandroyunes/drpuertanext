@@ -45,8 +45,8 @@ const Navigation: FC = () => {
                   />
                 ) : (
                   <Image
-                    width={140}
-                    height={60}
+                    width={160}
+                    height={68}
                     src={"/resources/logo/logo-white.png"}
                     alt="Picture of the author"
                   />
@@ -93,7 +93,7 @@ const Navigation: FC = () => {
                     : "/resources/logo/logo-white.png"
                 } `}
                 height={60}
-                width={136}
+                width={150}
               />
             </a>
           </Link>

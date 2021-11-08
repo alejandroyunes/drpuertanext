@@ -26,12 +26,12 @@ const Container = (props: any) => (
       {/* <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com"/> */}
       <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&family=Poppins:wght@100;300&family=Roboto&family=Roboto+Slab&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&family=Poppins:wght@100;300&family=Roboto&family=Roboto+Slab&display=swap"
         rel="stylesheet"
       />
     </Head>
-    {/* <ContactTop />
-    <Navigation /> */}
+    <ContactTop />
+    <Navigation />
     {props.children}
   </ThemeProvider>
 );

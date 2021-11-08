@@ -1,5 +1,5 @@
 /* stylelint-disable */
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-weight: normal;
-    background-color: #000;
+    background-color: #fff;
   }
   h1,
   h2,

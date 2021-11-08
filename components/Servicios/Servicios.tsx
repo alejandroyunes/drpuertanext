@@ -7,7 +7,7 @@ import {
   NewsWrapper,
   ImageHeading,
   Date,
-} from "./noticias.styled";
+} from "./servicios.styled";
 
 interface NewsProps {
   news: {
@@ -22,8 +22,7 @@ interface NewsProps {
   }[];
 }
 
-const Noticias: FC<NewsProps> = ({ news }) => {
-  console.log(news);
+const Servicios: FC<NewsProps> = ({ news }) => {
   let Arr = [...news];
   let firstNews = Arr.splice(0, 1).shift();
   let firstImage = firstNews?.image.url;
@@ -74,4 +73,4 @@ const Noticias: FC<NewsProps> = ({ news }) => {
   );
 };
 
-export default Noticias;
+export default Servicios;

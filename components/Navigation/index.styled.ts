@@ -7,17 +7,21 @@ export const DesktopNav = styled.div<StyledHeaderProps>`
   width: 100%;
   /* background-color: ${({ theme }) => theme.colors.transparent}; */
   background-color: ${({ openMenu, theme }) =>
-    openMenu ? theme.colors.darkerGray : theme.colors.transparent};
+    openMenu ? theme.colors.darkerGray : `rgba(255, 255, 255, 0.2);`};
+  box-shadow: 0 1px 3px rgb(0 0 0 / 15%);
   position: ${({ openMenu }) => (openMenu ? "fixed" : "absolute")};
   animation: ${({ openMenu }) => (openMenu ? "navbar-slice-down 1s" : "none")};
   transform: ${({ openMenu }) => (openMenu ? "translate(-50%, 0)" : "none")};
   left: ${({ openMenu }) => (openMenu ? "50%" : "none")};
-  height: 60px;
+  height: 80px;
   align-items: ${({ openMenu }) => (openMenu ? "center" : "none")};
   display: ${({ openMenu }) => (openMenu ? "flex" : "block")};
   justify-content: ${({ openMenu }) => (openMenu ? "space-between" : "none")};
   top: ${({ openMenu }) => (openMenu ? "0" : "none")};
   z-index: ${({ theme }) => theme.zIndices.sticky};
+  @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
+    height: 60px;
+  }
 `;
 export const LinksWrapper = styled.div`
   margin: 0 auto;
@@ -54,9 +58,10 @@ export const Menu = styled.div<StyledHeaderProps>`
     display: inline-flex;
     padding: 0 12px;
     font-family: ${({ theme }) => theme.fonts.nunito};
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 700;
     color: ${({ openMenu, theme }) =>
-      openMenu ? theme.colors.white : theme.colors.darkGray};
+      openMenu ? theme.colors.white : theme.colors.tertiary};
     cursor: pointer;
     span {
       display: flex;
@@ -102,7 +107,7 @@ export const MobileNav = styled.div<StyledHeaderProps>`
     top: ${({ openMenu }) => (openMenu ? "0" : "none")};
     z-index: ${({ theme }) => theme.zIndices.sticky};
     background-color: ${({ theme, openMenu }) =>
-      openMenu ? theme.colors.black : theme.colors.transparent};
+      openMenu ? theme.colors.secondary : theme.colors.transparent};
     width: 100%;
     height: 60px;
     justify-content: space-between;
@@ -114,7 +119,7 @@ export const MobileLogo = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     display: flex;
     align-items: center;
-    padding: 5px 0 0 16px;
+    margin: 5px 0 0 16px;
     -webkit-tap-highlight-color: transparent;
   }
 `;

@@ -6,8 +6,7 @@ const Contact: FC = () => {
   return (
     <>
       <TitleWrapper id="contacto">
-        <p>Contacto: 301 560 3233 - E-mail: punkiesycerebro@gmail.com</p>
-        <p>2021 © Punkies y Cerebro. Todos los derechos reservados.</p>
+        <p>2021 © Dr Jorge Puerta. Todos los derechos reservados.</p>
       </TitleWrapper>
     </>
   );
