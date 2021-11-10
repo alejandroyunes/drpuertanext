@@ -23,7 +23,6 @@ interface ImageProps {
 }
 
 const Slider: FC<ImageProps> = ({ images }) => {
-  const imageLength = images.length;
   return (
     <>
       <ImagesStylesDesktop>

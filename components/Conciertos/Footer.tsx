@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { GiNoseSide } from "react-icons/gi";
-import { GiNoseFront } from "react-icons/gi";
+import { FaFacebookSquare } from "react-icons/fa";
+import { AiOutlineInstagram } from "react-icons/ai";
 import {
   Wrapper,
   Description,
@@ -8,6 +8,7 @@ import {
   Icon,
   Column,
   Container,
+  Social,
 } from "./footer.styled";
 
 const Footer: FC = ({}) => {
@@ -25,7 +26,17 @@ const Footer: FC = ({}) => {
               El Dr. Puerta cuenta con más de 20 años de experiencia y más de
               5000 cirugías realizadas.
             </Description>
-            <Title bgColor={backgroundColor}>Redes Sociales</Title>
+            <Title className="home" bgColor={backgroundColor}>
+              Redes Sociales
+            </Title>
+            <Social>
+              <Icon>
+                <FaFacebookSquare size={35} color={iconColor} />
+              </Icon>
+              <Icon>
+                <AiOutlineInstagram size={35} color={iconColor} />
+              </Icon>
+            </Social>
           </Column>
           <Column>
             <Title className="home" bgColor={backgroundColor}>
@@ -62,8 +73,6 @@ const Footer: FC = ({}) => {
                 <li></li>
                 <li>Calle 4 sur #43 A 195 oficina 165 – Medellín Colombia.</li>
               </ul>
-              <p> </p>
-              <p></p>
             </Description>
           </Column>
         </Container>

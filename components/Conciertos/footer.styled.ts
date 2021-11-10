@@ -42,11 +42,24 @@ export const Column = styled.div`
   }
 `;
 
+export const Social = styled.div<EstudioProps>`
+  display: flex;
+  justify-content: left;
+  padding-left: 24px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
+    padding-left: 0;
+  }
+`;
+
 export const Icon = styled.div<EstudioProps>`
   display: flex;
-  justify-content: center;
-  padding-bottom: 36px;
+  justify-content: left;
+  padding: 8px 0;
   color: ${({ theme }) => theme.colors.primary};
+  cursor: pointer;
+  :last-child {
+    padding: 8px 8px 0;
+  }
 `;
 
 export const Title = styled.div<EstudioProps>`
@@ -77,6 +90,10 @@ export const Description = styled.div<EstudioProps>`
   ul {
     li {
       padding: 2px 0;
+      :hover {
+        color: ${({ theme }) => theme.colors.primary};
+        cursor: pointer;
+      }
     }
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {

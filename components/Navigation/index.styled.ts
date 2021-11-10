@@ -61,7 +61,7 @@ export const Menu = styled.div<StyledHeaderProps>`
     font-size: 18px;
     font-weight: 700;
     color: ${({ openMenu, theme }) =>
-      openMenu ? theme.colors.white : theme.colors.tertiary};
+      openMenu ? theme.colors.white : theme.colors.secondary};
     cursor: pointer;
     span {
       display: flex;

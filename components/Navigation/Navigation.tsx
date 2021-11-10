@@ -89,8 +89,8 @@ const Navigation: FC = () => {
               <Image
                 src={`${
                   !header
-                    ? "https://res.cloudinary.com/drpuerta/image/upload/v1636383827/logo_darker_ba779a3bcc.png"
-                    : "https://res.cloudinary.com/drpuerta/image/upload/v1636383827/logo_white_5a64236255.png?24281"
+                    ? "/resources/logo/logo-darker.png"
+                    : "/resources/logo/logo-white.png"
                 } `}
                 height={60}
                 width={150}
