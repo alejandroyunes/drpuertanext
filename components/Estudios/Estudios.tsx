@@ -13,6 +13,7 @@ import {
   Title,
   Icon,
   Column,
+  Row,
   Container,
 } from "./estudios.styled";
 
@@ -27,43 +28,61 @@ const Estudios: FC<EstudioProps> = ({ bgColor }) => {
     <Wrapper bgColor={backgroundColor}>
       <Container bgColor={backgroundColor}>
         <Column>
-          <Icon>
-            <FaUniversity size={80} color={iconColor} />
-          </Icon>
-          <Title bgColor={backgroundColor}>Títulos Universitarios</Title>
-          <Description bgColor={backgroundColor}>
-            Médico y Cirujano Universidad de Antioquia 1990 - 1996.
-          </Description>
+          <Row>
+            <Icon className="estudios-icon">
+              <FaUniversity color={iconColor} />
+            </Icon>
+          </Row>
+          <Row>
+            <Title bgColor={backgroundColor}>Títulos Universitarios</Title>
+            <Description bgColor={backgroundColor}>
+              Médico y Cirujano Universidad de Antioquia 1990 - 1996.
+            </Description>
+          </Row>
         </Column>
         <Column>
-          <Icon>
-            <FcGraduationCap size={80} />
-          </Icon>
-          <Title bgColor={backgroundColor}>Posgrado</Title>
-          <Description bgColor={backgroundColor}>
-            Especialización en Otorrinolaringología 1997-2000.
-          </Description>
+          <Row>
+            <Icon className="estudios-icon">
+              <FcGraduationCap />
+            </Icon>
+          </Row>
+          <Row>
+            <Title bgColor={backgroundColor}>Posgrado</Title>
+            <Description bgColor={backgroundColor}>
+              Especialización en Otorrinolaringología 1997-2000.
+            </Description>
+          </Row>
         </Column>
       </Container>
       <Container bgColor={backgroundColor}>
         <Column>
-          <Icon>
-            <MdLocalLibrary size={80} color={iconColor} />
-          </Icon>
-          <Title bgColor={backgroundColor}>Diplomado</Title>
-          <Description bgColor={backgroundColor}>
-            Diplomado en Docencia Universitaria, Universidad de Antioquia 2007.
-          </Description>
+          <Row>
+            <Icon className="estudios-icon">
+              <MdLocalLibrary color={iconColor} />
+            </Icon>
+          </Row>
+          <Row>
+            <Title bgColor={backgroundColor}>Diplomado</Title>
+            <Description bgColor={backgroundColor}>
+              Diplomado en Docencia Universitaria, Universidad de Antioquia
+              2007.
+            </Description>
+          </Row>
         </Column>
         <Column>
-          <Icon>
-            <AiFillMedicineBox size={80} color={iconColor} />
-          </Icon>
-          <Title bgColor={backgroundColor}>Universidad de Antioquia</Title>
-          <Description bgColor={backgroundColor}>
-            Jefe de Sección de Otorrinolaringología y Cirugía de Cabeza y
-            Cuello. Facultad de Medicina Universidad de Antioquia. 2008 a 2018.
-          </Description>
+          <Row>
+            <Icon className="estudios-icon">
+              <AiFillMedicineBox color={iconColor} />
+            </Icon>
+          </Row>
+          <Row>
+            <Title bgColor={backgroundColor}>Universidad de Antioquia</Title>
+            <Description bgColor={backgroundColor}>
+              Jefe de Sección de Otorrinolaringología y Cirugía de Cabeza y
+              Cuello. Facultad de Medicina Universidad de Antioquia. 2008 a
+              2018.
+            </Description>
+          </Row>
         </Column>
       </Container>
     </Wrapper>
