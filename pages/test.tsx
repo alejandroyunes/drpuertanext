@@ -18,21 +18,14 @@ type Slider = {
   color?: boolean;
 };
 
-type NewsData = {
-  news: {
-    image: {
-      url: string;
-    };
-    id: number;
-    title: string;
-    description: string;
-    date: Date;
-    readMore?: string;
-  }[];
+type Logos = {
+  id: number;
+  image: string;
 };
 
 export default function Index({
   images,
+  logos,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
@@ -75,6 +68,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const res = await fetch(`https://drpuerta.herokuapp.com/sliders`);
   const images: Slider = await res.json();
 
+  const resLogos = await fetch(`https://drpuerta.herokuapp.com/logos`);
+  const logos: Logos = await resLogos.json();
+
   if (!images) {
     console.log("posts false");
     return {
@@ -88,6 +84,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       images: images,
+      logos: logos,
     },
     revalidate: 1,
   };
