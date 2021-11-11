@@ -40,18 +40,14 @@ const Navigation: FC = () => {
                   <Image
                     width={200}
                     height={80}
-                    src={
-                      "https://res.cloudinary.com/drpuerta/image/upload/v1636383827/logo_darker_ba779a3bcc.png"
-                    }
+                    src={"/resources/logo/logo-darker.png"}
                     alt="Picture of the author"
                   />
                 ) : (
                   <Image
                     width={160}
                     height={68}
-                    src={
-                      "https://res.cloudinary.com/drpuerta/image/upload/v1636383827/logo_white_5a64236255.png"
-                    }
+                    src={"/resources/logo/logo-white.png"}
                     alt="Picture of the author"
                   />
                 )}
@@ -93,8 +89,8 @@ const Navigation: FC = () => {
               <Image
                 src={`${
                   !header
-                    ? "https://res.cloudinary.com/drpuerta/image/upload/v1636383827/logo_darker_ba779a3bcc.png"
-                    : "https://res.cloudinary.com/drpuerta/image/upload/v1636383827/logo_white_5a64236255.png"
+                    ? "/resources/logo/logo-darker.png"
+                    : "/resources/logo/logo-white.png"
                 } `}
                 height={60}
                 width={150}
