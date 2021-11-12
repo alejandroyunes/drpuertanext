@@ -40,14 +40,14 @@ const Navigation: FC = () => {
                   <Image
                     width={200}
                     height={80}
-                    src={"/resources/logo/logo-darker.png"}
+                    src={"/logo-darker.png"}
                     alt="Picture of the author"
                   />
                 ) : (
                   <Image
                     width={160}
                     height={68}
-                    src={"/resources/logo/logo-white.png"}
+                    src={"/logo-white.png"}
                     alt="Picture of the author"
                   />
                 )}
@@ -87,11 +87,7 @@ const Navigation: FC = () => {
           <Link href="/">
             <a>
               <Image
-                src={`${
-                  !header
-                    ? "/resources/logo/logo-darker.png"
-                    : "/resources/logo/logo-white.png"
-                } `}
+                src={`${!header ? "/logo-darker.png" : "/logo-white.png"} `}
                 height={60}
                 width={150}
               />
