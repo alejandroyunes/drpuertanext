@@ -5,10 +5,9 @@ import Slider from "components/Slider/Slider";
 import Title from "components/Title/Title";
 import Estudios from "components/Estudios/Estudios";
 import Procedimientos from "components/Procedimientos/Procedimientos";
-import Contact from "components/Contact/Contact";
-import Conciertos from "components/Conciertos/Footer";
+import Footer from "components/Footer/Footer";
 import ThreeCardIcon from "components/ThreeCardIcon/ThreeCardIcon";
-import Consctruction from "components/Construction/Construction";
+import Contact from "components/Contacto/Contacto";
 
 type Slider = {
   id: number;
@@ -58,7 +57,7 @@ export default function Index({
         backgroundColor={"light"}
       />
       <Estudios />
-      <Conciertos />
+      <Footer />
       <Contact />
     </div>
   );

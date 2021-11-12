@@ -70,7 +70,7 @@ const Navigation: FC = () => {
                     <a>Galería</a>
                   </li>
                 </Link>
-                <Link href="#discografia">
+                <Link href="/contact">
                   <li>
                     <a>Contacto</a>
                   </li>
@@ -87,7 +87,7 @@ const Navigation: FC = () => {
           <Link href="/">
             <a>
               <Image
-                src={`${!header ? "/logo-darker.png" : "/logo-white.png"} `}
+                src={`${header ? "/logo-white.png" : "/logo-darker.png"} `}
                 height={60}
                 width={150}
               />

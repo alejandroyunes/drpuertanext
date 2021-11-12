@@ -7,7 +7,6 @@ interface StyledHeaderProps {
 }
 
 export const Hamburger: FC<StyledHeaderProps> = ({ openMenu }) => {
-  // const Hamburger = ({ openMenu }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -26,14 +25,14 @@ export const Hamburger: FC<StyledHeaderProps> = ({ openMenu }) => {
           <span></span>
           <span></span>
           <Links>
-            <Link href="#inicio">
+            <Link href="/test">
               <li onClick={() => setMenuOpen(false)}>
                 <a>Inicio</a>
               </li>
             </Link>
             <Link href="#noticias">
               <li onClick={() => setMenuOpen(false)}>
-                <a>Noticias</a>
+                <a>Dr. Puerta</a>
               </li>
             </Link>
             <Link href="#discografia">
@@ -41,12 +40,7 @@ export const Hamburger: FC<StyledHeaderProps> = ({ openMenu }) => {
                 <a>Galería</a>
               </li>
             </Link>
-            <Link href="/">
-              <li onClick={() => setMenuOpen(false)}>
-                <a>GP</a>
-              </li>
-            </Link>
-            <Link href="#conciertos">
+            <Link href="/contact">
               <li onClick={() => setMenuOpen(false)}>
                 <a>Contacto</a>
               </li>
