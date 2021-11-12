@@ -36,7 +36,7 @@ const Navigation: FC = () => {
           <LinksContainer>
             <Link href="/">
               <ImageMain>
-                {!header ? (
+                {header ? (
                   <Image
                     width={200}
                     height={80}
