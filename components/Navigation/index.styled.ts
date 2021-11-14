@@ -46,6 +46,7 @@ export const LinksWrapper = styled.div`
 export const LinksContainer = styled.div`
   width: 100%;
   display: flex;
+  padding-top: 8px;
   justify-content: space-between;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     display: none;
