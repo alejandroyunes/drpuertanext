@@ -43,20 +43,19 @@ export const Column = styled.div`
     margin: auto 0;
     align-items: center;
     padding: 8px 16px 0 0;
-    font-size: 80px;
+    font-size: 32px;
     @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
       font-size: 50px;
     }
   }
 `;
 
-export const Row = styled.div``;
+export const Row = styled.div`
+  display: inline-flex;
+`;
 
 export const Icon = styled.div<EstudioProps>`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 32px;
   color: ${({ theme }) => theme.colors.primary};
 `;
 
@@ -67,7 +66,7 @@ export const Title = styled.div<EstudioProps>`
   font-family: ${({ theme }) => theme.fonts.nunito};
   padding: 8px 0;
   @media (min-width: ${({ theme }) => theme.breakpoint.sm}) {
-    text-align: center;
+    text-align: left;
   }
 `;
 

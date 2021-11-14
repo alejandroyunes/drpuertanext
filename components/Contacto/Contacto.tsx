@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FaUniversity } from "react-icons/fa";
 import { FcDiploma2 } from "react-icons/fc";
 import { GrCertificate } from "react-icons/gr";
-import { FcGraduationCap } from "react-icons/fc";
+import { FaLocationArrow } from "react-icons/fa";
 import { FcLibrary } from "react-icons/fc";
 import { AiFillMedicineBox } from "react-icons/ai";
 import { MdLocalLibrary } from "react-icons/md";
@@ -30,11 +30,11 @@ const Estudios: FC<EstudioProps> = ({ bgColor }) => {
         <Column>
           <Row>
             <Icon className="estudios-icon">
-              <FaUniversity color={iconColor} />
+              <FaLocationArrow color={iconColor} />{" "}
             </Icon>
+            <Title bgColor={backgroundColor}>Títulos Universitarios</Title>
           </Row>
           <Row>
-            <Title bgColor={backgroundColor}>Títulos Universitarios</Title>
             <Description bgColor={backgroundColor}>
               Médico y Cirujano Universidad de Antioquia 1990 - 1996.
             </Description>
@@ -43,13 +43,13 @@ const Estudios: FC<EstudioProps> = ({ bgColor }) => {
         <Column>
           <Row>
             <Icon className="estudios-icon">
-              <FcGraduationCap />
+              <FaLocationArrow />
             </Icon>
           </Row>
           <Row>
             <Title bgColor={backgroundColor}>Posgrado</Title>
             <Description bgColor={backgroundColor}>
-              Especialización en Otorrinolaringología 1997-2000.
+              Especialización en Otorrinolaringología
             </Description>
           </Row>
         </Column>

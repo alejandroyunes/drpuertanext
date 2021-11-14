@@ -1,13 +1,13 @@
 import Head from "next//head";
-import Contacto from "components/Contacto/contacto";
+import ContactoComponent from "components/Contacto/contacto";
 
-export default function Contact() {
+export default function Contacto() {
   return (
     <div>
       <Head>
         <title>Contact Title</title>
       </Head>
-      <Contacto />
+      <ContactoComponent />
     </div>
   );
 }
