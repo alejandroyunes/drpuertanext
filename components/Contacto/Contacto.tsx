@@ -15,7 +15,7 @@ interface EstudioProps {
   bgColor?: string;
 }
 
-const Estudios: FC<EstudioProps> = ({ bgColor }) => {
+const Contacto: FC<EstudioProps> = ({ bgColor }) => {
   const backgroundColor = "white";
   const iconColor = "#37474F";
   return (
@@ -52,4 +52,4 @@ const Estudios: FC<EstudioProps> = ({ bgColor }) => {
   );
 };
 
-export default Estudios;
+export default Contacto;

@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "axios": "^0.21.4",
-    "google-maps-react": "^2.0.6",
     "next": "10.2.3",
     "next-images": "^1.8.1",
     "polished": "^4.1.3",
