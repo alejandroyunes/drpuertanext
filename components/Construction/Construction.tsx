@@ -1,8 +1,7 @@
-import { useEffect, useState, FC } from "react";
+import { FC } from "react";
 
 import { Background, BackgroundTop, Text } from "./construction.styled";
 import Image from "next/image";
-// import Logo from "../../public/logo.png";
 
 const Construction: FC = () => {
   return (

@@ -37,17 +37,17 @@ const Navigation: FC = () => {
             <Link href="/">
               <ImageMain>
                 {header ? (
-                  <img
+                  <Image
                     width={200}
                     height={80}
-                    src={"/logo-white.png"}
+                    src={`/logo-white.png`}
                     alt="Picture of the author"
                   />
                 ) : (
-                  <img
+                  <Image
                     width={160}
                     height={68}
-                    src={"/logo-darker.png"}
+                    src={`/logo-darker.png`}
                     alt="Picture of the author"
                   />
                 )}
@@ -85,13 +85,11 @@ const Navigation: FC = () => {
       <MobileNav openMenu={header}>
         <MobileLogo>
           <Link href="/">
-            <a>
-              <Image
-                src={`${header ? "/logo-white.png" : "/logo-darker.png"} `}
-                height={60}
-                width={150}
-              />
-            </a>
+            <Image
+              src={`${header ? "/logo-white.png" : "/logo-darker.png"} `}
+              height={60}
+              width={150}
+            />
           </Link>
         </MobileLogo>
         <Hamburger openMenu={header} />
