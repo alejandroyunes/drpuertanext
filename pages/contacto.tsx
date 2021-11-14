@@ -1,5 +1,5 @@
 import Head from "next//head";
-import ContactoComponent from "components/Contacto/contacto";
+import ContactoComponent from "components/ContactoComp/ContactoComponent";
 
 export default function Contacto() {
   return (
