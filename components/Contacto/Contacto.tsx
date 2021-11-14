@@ -1,12 +1,6 @@
 import { FC } from "react";
-import Image from "next/image";
-import { FaUniversity } from "react-icons/fa";
-import { FcDiploma2 } from "react-icons/fc";
-import { GrCertificate } from "react-icons/gr";
 import { FaLocationArrow } from "react-icons/fa";
-import { FcLibrary } from "react-icons/fc";
-import { AiFillMedicineBox } from "react-icons/ai";
-import { MdLocalLibrary } from "react-icons/md";
+
 import {
   Wrapper,
   Description,
