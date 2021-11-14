@@ -7,7 +7,7 @@ import Estudios from "components/Estudios/Estudios";
 import Procedimientos from "components/Procedimientos/Procedimientos";
 import Footer from "components/Footer/Footer";
 import ThreeCardIcon from "components/ThreeCardIcon/ThreeCardIcon";
-import Contact from "components/Contacto/Contacto";
+import Contacto from "components/DerechosFooter/DerechosFooter";
 
 type Slider = {
   id: number;
@@ -58,7 +58,7 @@ export default function Index({
       />
       <Estudios />
       <Footer />
-      <Contact />
+      <Contacto />
     </div>
   );
 }

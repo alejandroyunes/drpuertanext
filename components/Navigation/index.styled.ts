@@ -119,6 +119,7 @@ export const MobileLogo = styled.div`
   display: none;
   @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
     display: flex;
+    cursor: pointer;
     align-items: center;
     margin: 5px 0 0 16px;
     -webkit-tap-highlight-color: transparent;

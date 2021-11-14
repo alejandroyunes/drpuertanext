@@ -85,11 +85,21 @@ const Navigation: FC = () => {
       <MobileNav openMenu={header}>
         <MobileLogo>
           <Link href="/">
-            <Image
-              src={`${header ? "/logo-white.png" : "/logo-darker.png"} `}
-              height={60}
-              width={150}
-            />
+            {header ? (
+              <Image
+                width={150}
+                height={60}
+                src={`/logo-white.png`}
+                alt="Picture of the author"
+              />
+            ) : (
+              <Image
+                width={150}
+                height={60}
+                src={`/logo-darker.png`}
+                alt="Picture of the author"
+              />
+            )}
           </Link>
         </MobileLogo>
         <Hamburger openMenu={header} />
