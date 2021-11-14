@@ -36,12 +36,21 @@ const Navigation: FC = () => {
           <LinksContainer>
             <Link href="/">
               <ImageMain>
-                <Image
-                  width={160}
-                  height={68}
-                  src={"/logo-darker.png"}
-                  alt="Picture of the author"
-                />
+                {header ? (
+                  <img
+                    width={200}
+                    height={80}
+                    src={"/logo-white.png"}
+                    alt="Picture of the author"
+                  />
+                ) : (
+                  <img
+                    width={160}
+                    height={68}
+                    src={"/logo-darker.png"}
+                    alt="Picture of the author"
+                  />
+                )}
               </ImageMain>
             </Link>
             <Menu openMenu={header}>
