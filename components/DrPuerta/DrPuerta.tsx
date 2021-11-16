@@ -24,6 +24,7 @@ const DrPuerta: FC<EstudioProps> = ({ bgColor }) => {
   return (
     <Wrapper bgColor={backgroundColor}>
       <TitleComponent
+        small={true}
         title={"Dr. Jorge Puerta"}
         message={`Médico y Cirujano, especialista en Otorrinolaringología de la Universidad de Antioquia.`}
         backgroundColor={"light"}

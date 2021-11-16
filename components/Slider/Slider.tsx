@@ -34,7 +34,7 @@ const Slider: FC<ImageProps> = ({ images }) => {
                 objectFit="cover"
                 objectPosition="top center"
                 src={`${img.image.url}`}
-                alt="punkies y cerebro showcase"
+                alt="Cirugía Facial"
               />
               {img.color === true ? (
                 <SliderTextColor>
@@ -61,7 +61,7 @@ const Slider: FC<ImageProps> = ({ images }) => {
                 objectFit="cover"
                 objectPosition="top center"
                 src={`${img.image.url}`}
-                alt="punkies y cerebro showcase"
+                alt="Experto en Cirugía Facial"
               />
               {img.color === true ? (
                 <SliderTextColor>
