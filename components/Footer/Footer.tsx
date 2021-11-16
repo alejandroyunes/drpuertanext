@@ -20,7 +20,7 @@ const Footer: FC = ({}) => {
         <Container bgColor={backgroundColor}>
           <Column>
             <Title className="home" bgColor={backgroundColor}>
-              Nosotros
+              Dr. Puerta
             </Title>
             <Description bgColor={backgroundColor}>
               Médico y Cirujano, especialista en Otorrinolaringología de la
