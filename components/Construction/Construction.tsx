@@ -1,5 +1,5 @@
 import { FC } from "react";
-
+import { AiOutlineInstagram } from "react-icons/ai";
 import { Background, BackgroundTop, Text } from "./construction.styled";
 import Image from "next/image";
 
@@ -20,6 +20,16 @@ const Construction: FC = () => {
           <p>Dir: Calle 4 sur #43 A 195 oficina 165</p>
           <p>Centro Ejecutivo – Medellín, Colombia</p>
           <h3>Galería En Construcci&oacute;n</h3>
+
+          <div>
+            <p>Ver Instagram</p>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/cirugiafacial_jorgepuerta/"
+            >
+              <AiOutlineInstagram size={35} />
+            </a>
+          </div>
         </Text>
       </Background>
     </>

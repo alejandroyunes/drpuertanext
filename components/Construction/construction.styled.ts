@@ -25,7 +25,6 @@ export const Background = styled.div`
   h3 {
     font-size: ${({ theme }) => theme.fontSizes["4xl"]};
     padding: 24px 0;
-    text-align: center;
   }
   p {
     padding: 4px 0;

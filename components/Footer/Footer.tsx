@@ -34,7 +34,12 @@ const Footer: FC = ({}) => {
                 <FaFacebookSquare size={35} color={iconColor} />
               </Icon>
               <Icon>
-                <AiOutlineInstagram size={35} color={iconColor} />
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/cirugiafacial_jorgepuerta/"
+                >
+                  <AiOutlineInstagram size={35} color={iconColor} />
+                </a>
               </Icon>
             </Social>
           </Column>
