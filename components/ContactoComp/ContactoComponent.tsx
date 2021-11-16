@@ -79,9 +79,9 @@ const ContactoComponent: FC<EstudioProps> = ({ bgColor }) => {
           </Row>
           <Row>
             <Title className="como-llegar" bgColor={backgroundColor}>
-              Desde el occidente por el puente Gilberto Echeverry calzada
-              izquierda ydesde carrera 43c en ambas direcciones hasta llegar a
-              la calle 4 sur.
+              Desde el occidente por el puente Gilberto Echeverry tomar calzada
+              izquierda y desde carrera 43c en ambas direcciones llegan a la
+              calle 4 sur.
             </Title>
           </Row>
         </Column>
