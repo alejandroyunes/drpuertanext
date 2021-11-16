@@ -16,9 +16,7 @@ export const TitleWrapper = styled.div<TitleProps>`
     font-size: ${({ theme }) => theme.fontSizes["5xl"]};
     letter-spacing: 4px;
     color: ${({ theme, backgroundColor }) =>
-      backgroundColor === "light"
-        ? theme.colors.secondary
-        : theme.colors.white};
+      backgroundColor === "light" ? theme.colors.tertiary : theme.colors.white};
     font-family: ${({ theme }) => theme.fonts.nunito};
   }
   h2 {
@@ -26,9 +24,7 @@ export const TitleWrapper = styled.div<TitleProps>`
     margin: 0 auto;
     font-size: ${({ theme }) => theme.fontSizes.lg};
     color: ${({ theme, backgroundColor }) =>
-      backgroundColor === "light"
-        ? theme.colors.secondary
-        : theme.colors.white};
+      backgroundColor === "light" ? theme.colors.tertiary : theme.colors.white};
     padding-top: 12px;
     font-family: ${({ theme }) => theme.fonts.secondary};
     max-width: 600px;

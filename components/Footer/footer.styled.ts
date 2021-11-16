@@ -86,7 +86,7 @@ export const Description = styled.div<EstudioProps>`
   justify-content: left;
   padding: 8px 24px;
   max-width: 400px;
-  text-align: justify;
+
   ul {
     li {
       padding: 2px 0;

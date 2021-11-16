@@ -23,8 +23,8 @@ const Footer: FC = ({}) => {
               Nosotros
             </Title>
             <Description bgColor={backgroundColor}>
-              El Dr. Puerta cuenta con más de 20 años de experiencia y más de
-              5000 cirugías realizadas.
+              Médico y Cirujano, especialista en Otorrinolaringología de la
+              Universidad de Antioquia.
             </Description>
             <Title className="home" bgColor={backgroundColor}>
               Redes Sociales
@@ -43,7 +43,7 @@ const Footer: FC = ({}) => {
               Publicaciones
             </Title>
             <Description bgColor={backgroundColor}>
-              Estudios publicados por el Dr. Puerta
+              <a href="/estudios.pdf"> Estudio publicados por el Dr. Puerta</a>
             </Description>
           </Column>
           <Column>
@@ -52,10 +52,23 @@ const Footer: FC = ({}) => {
             </Title>
             <Description bgColor={backgroundColor}>
               <ul>
-                <li>Inicio</li>
-                <li>Dr. Puerta</li>
-                <li>Galería</li>
-                <li>Estudios</li>
+                <li>
+                  <a href="/">Inicio</a>
+                </li>
+                <li>
+                  <a href="/drpuerta">Dr. Puerta</a>
+                </li>
+                <li>
+                  <a href="/galeria">Galería</a>
+                </li>
+                <li>
+                  <a href="/estudio.pdf" target="_blank">
+                    Estudio
+                  </a>
+                </li>
+                <li>
+                  <a href="/contacto">Contacto</a>
+                </li>
               </ul>
             </Description>
           </Column>
@@ -71,7 +84,7 @@ const Footer: FC = ({}) => {
                 <li>Cel: 318 898 1046.</li>
                 <li className="home-second">Dirección</li>
                 <li></li>
-                <li>Calle 4 sur #43 A 195 oficina 165 – Medellín Colombia.</li>
+                <li>Cl. 4 Sur #43a-195 oficina 165 – Medellín - Colombia.</li>
               </ul>
             </Description>
           </Column>

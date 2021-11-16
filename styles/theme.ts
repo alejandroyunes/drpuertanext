@@ -35,7 +35,7 @@ const colors: ColorType = {
 
 colors["primary"] = colors.lightGreen;
 colors["secondary"] = colors.darkerGray;
-colors["tertiary"] = colors.darkBlue;
+colors["tertiary"] = colors.darkGray;
 
 const fonts = {
   primary: '"Metal Mania", cursive',

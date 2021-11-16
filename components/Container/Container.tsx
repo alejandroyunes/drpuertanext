@@ -4,7 +4,8 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyle from "styles/global";
 import { theme } from "styles/theme";
 import ContactTop from "components/ContactTop/ContactTop";
-
+import Footer from "components/Footer/Footer";
+import DerechosFooter from "components/DerechosFooter/DerechosFooter";
 const Container = (props: any) => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
@@ -33,6 +34,8 @@ const Container = (props: any) => (
     <ContactTop />
     <Navigation />
     {props.children}
+    <Footer />
+    <DerechosFooter />
   </ThemeProvider>
 );
 

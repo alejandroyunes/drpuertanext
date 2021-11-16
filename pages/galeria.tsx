@@ -2,11 +2,8 @@ import Head from "next/head";
 import { InferGetStaticPropsType } from "next";
 import { GetStaticProps } from "next";
 import Slider from "components/Slider/Slider";
-import Title from "components/Title/Title";
-import Estudios from "components/Estudios/Estudios";
-import Procedimientos from "components/Procedimientos/Procedimientos";
 
-import ThreeCardIcon from "components/ThreeCardIcon/ThreeCardIcon";
+import Consctruction from "components/Construction/Construction";
 
 type Slider = {
   id: number;
@@ -16,14 +13,9 @@ type Slider = {
   color?: boolean;
 };
 
-type Logos = {
-  id: number;
-  image: string;
-};
-
-export default function Index({
-  images,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Index({}: InferGetStaticPropsType<
+  typeof getStaticProps
+>) {
   return (
     <div>
       <Head>
@@ -38,23 +30,7 @@ export default function Index({
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Consctruction /> */}
-      <Slider images={images} />
-      <ThreeCardIcon />
-
-      <Title
-        small={true}
-        title={"Procedimientos"}
-        message={`Aquí encontrarás las especialidades del Dr. Puerta`}
-        backgroundColor={"dark"}
-      />
-      <Procedimientos />
-      <Title
-        title={"Estudios"}
-        message={`Estudios realizados por el Dr. Jorge Puerta y su trayectoria profesional`}
-        backgroundColor={"light"}
-      />
-      <Estudios />
+      <Consctruction />
     </div>
   );
 }
@@ -62,9 +38,6 @@ export default function Index({
 export const getStaticProps: GetStaticProps = async (context) => {
   const res = await fetch(`https://drpuerta.herokuapp.com/sliders`);
   const images: Slider = await res.json();
-
-  const resLogos = await fetch(`https://drpuerta.herokuapp.com/logos`);
-  const logos: Logos = await resLogos.json();
 
   if (!images) {
     console.log("posts false");
@@ -79,7 +52,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       images: images,
-      logos: logos,
     },
     revalidate: 1,
   };

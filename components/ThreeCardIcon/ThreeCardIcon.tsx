@@ -20,7 +20,7 @@ const ThreeCardIcon: FC = () => {
             <FaHandHoldingMedical size={80} />
           </Icon>
           <Description>Médico Especialista en Otorrinolaringología</Description>
-          <Link href="/about">
+          <Link href="/drpuerta">
             <a>leer más</a>
           </Link>
         </CardWrapper>
@@ -29,7 +29,7 @@ const ThreeCardIcon: FC = () => {
             <GiHealthCapsule size={80} />
           </Icon>
           <Description>Excelente Atención Postquirúrgica</Description>
-          <Link href="/about">
+          <Link href="/contacto">
             <a>solicitar cita</a>
           </Link>
         </CardWrapper>
@@ -38,8 +38,8 @@ const ThreeCardIcon: FC = () => {
             <SiWorldhealthorganization size={80} />
           </Icon>
           <Description>Estudios Publicados</Description>
-          <Link href="/about">
-            <a>leer más</a>
+          <Link href="/estudio.pdf">
+            <a target="_blank">leer más</a>
           </Link>
         </CardWrapper>
       </Wrapper>

@@ -25,22 +25,22 @@ export const Hamburger: FC<StyledHeaderProps> = ({ openMenu }) => {
           <span></span>
           <span></span>
           <Links>
-            <Link href="/test">
+            <Link href="/">
               <li onClick={() => setMenuOpen(false)}>
                 <a>Inicio</a>
               </li>
             </Link>
-            <Link href="#noticias">
+            <Link href="/drpuerta">
               <li onClick={() => setMenuOpen(false)}>
                 <a>Dr. Puerta</a>
               </li>
             </Link>
-            <Link href="#discografia">
+            <Link href="/galeria">
               <li onClick={() => setMenuOpen(false)}>
                 <a>Galería</a>
               </li>
             </Link>
-            <Link href="/contact">
+            <Link href="/contacto">
               <li onClick={() => setMenuOpen(false)}>
                 <a>Contacto</a>
               </li>

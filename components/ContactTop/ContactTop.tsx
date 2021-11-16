@@ -11,7 +11,7 @@ const ContactTop: FC = () => {
           <Icon>
             <GoLocation />
           </Icon>
-          <p>Calle 4 sur #43 A 195 oficina 165 – Medellín Colombia</p>
+          <p>Cl. 4 Sur #43a-195 - oficina 165 – Medellín Colombia</p>
         </Column>
         <Column>
           <Icon>

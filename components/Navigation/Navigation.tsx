@@ -60,17 +60,17 @@ const Navigation: FC = () => {
                     <a>Inicio</a>
                   </li>
                 </Link>
-                <Link href="#noticias">
+                <Link href="/drpuerta">
                   <li>
                     <a>Dr. Puerta</a>
                   </li>
                 </Link>
-                <Link href="#discografia">
+                <Link href="/galeria">
                   <li>
                     <a>Galería</a>
                   </li>
                 </Link>
-                <Link href="/contact">
+                <Link href="/contacto">
                   <li>
                     <a>Contacto</a>
                   </li>

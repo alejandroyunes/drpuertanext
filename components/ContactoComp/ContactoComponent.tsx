@@ -1,20 +1,20 @@
 import { FC } from "react";
 import Image from "next/image";
-import { FaUniversity } from "react-icons/fa";
-import { FcDiploma2 } from "react-icons/fc";
-import { GrCertificate } from "react-icons/gr";
-import { FcGraduationCap } from "react-icons/fc";
-import { FcLibrary } from "react-icons/fc";
-import { AiFillMedicineBox } from "react-icons/ai";
-import { MdLocalLibrary } from "react-icons/md";
+import { MdOutlinePhoneCallback } from "react-icons/md";
+BsFillPhoneFill;
+import { MdLocationOn } from "react-icons/md";
+import { BsFillPhoneFill } from "react-icons/bs";
+import { FcGoogle } from "react-icons/fc";
+import { SiWaze } from "react-icons/si";
 import {
   Wrapper,
-  Description,
+  ColumnMaps,
   Title,
   Icon,
   Column,
   Row,
   Container,
+  ColumnImage,
 } from "./contactocomp.styled";
 
 interface EstudioProps {
@@ -30,60 +30,70 @@ const ContactoComponent: FC<EstudioProps> = ({ bgColor }) => {
         <Column>
           <Row>
             <Icon className="estudios-icon">
-              <FaUniversity color={iconColor} />
+              <MdLocationOn color={iconColor} />
+              <Title bgColor={backgroundColor}>
+                Cl. 4 Sur #43a-195 - oficina 165
+              </Title>
             </Icon>
           </Row>
-          <Row>
-            <Title bgColor={backgroundColor}>Títulos Universitarios</Title>
-            <Description bgColor={backgroundColor}>
-              Médico y Cirujano Universidad de Antioquia 1990 - 1996.
-            </Description>
-          </Row>
-        </Column>
-        <Column>
           <Row>
             <Icon className="estudios-icon">
-              <FcGraduationCap />
+              <MdOutlinePhoneCallback color={iconColor} />
+              <Title bgColor={backgroundColor}>Fijo: +6 04 268 5436</Title>
             </Icon>
           </Row>
-          <Row>
-            <Title bgColor={backgroundColor}>Posgrado</Title>
-            <Description bgColor={backgroundColor}>
-              Especialización en Otorrinolaringología 1997-2000.
-            </Description>
-          </Row>
-        </Column>
-      </Container>
-      <Container bgColor={backgroundColor}>
-        <Column>
           <Row>
             <Icon className="estudios-icon">
-              <MdLocalLibrary color={iconColor} />
+              <BsFillPhoneFill color={iconColor} />
+              <Title bgColor={backgroundColor}>Cell: 318 898 1046</Title>
             </Icon>
           </Row>
+
+          <ColumnMaps>
+            <a
+              className="map-link"
+              href="https://goo.gl/maps/zHGEAqqYNnJKTPgs7"
+            >
+              <Icon className="map-icon">
+                <FcGoogle size={40} color={iconColor} />
+              </Icon>
+              <Title className="title" bgColor={backgroundColor}>
+                Ver en Google Maps
+              </Title>
+            </a>
+            <a
+              className="last-child map-link"
+              href="https://waze.com/ul/hd34722b5f"
+            >
+              <Icon className="map-icon">
+                <SiWaze size={40} color={iconColor} />
+              </Icon>
+              <Title className="title" bgColor={backgroundColor}>
+                Ver en Waze
+              </Title>
+            </a>
+          </ColumnMaps>
+
           <Row>
-            <Title bgColor={backgroundColor}>Diplomado</Title>
-            <Description bgColor={backgroundColor}>
-              Diplomado en Docencia Universitaria, Universidad de Antioquia
-              2007.
-            </Description>
+            <Title bgColor={backgroundColor}>¿Cómo llegar?</Title>
+          </Row>
+          <Row>
+            <Title className="como-llegar" bgColor={backgroundColor}>
+              Desde el occidente por el puente Gilberto Echeverry calzada
+              izquierda ydesde carrera 43c en ambas direcciones hasta llegar a
+              la calle 4 sur.
+            </Title>
           </Row>
         </Column>
-        <Column>
-          <Row>
-            <Icon className="estudios-icon">
-              <AiFillMedicineBox color={iconColor} />
-            </Icon>
-          </Row>
-          <Row>
-            <Title bgColor={backgroundColor}>Universidad de Antioquia</Title>
-            <Description bgColor={backgroundColor}>
-              Jefe de Sección de Otorrinolaringología y Cirugía de Cabeza y
-              Cuello. Facultad de Medicina Universidad de Antioquia. 2008 a
-              2018.
-            </Description>
-          </Row>
-        </Column>
+
+        <ColumnImage>
+          <Image
+            width={860}
+            height={500}
+            src={`/location-medium-zoom.jpg`}
+            alt="Picture of the author"
+          />
+        </ColumnImage>
       </Container>
     </Wrapper>
   );
