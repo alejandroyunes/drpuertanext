@@ -8,7 +8,7 @@ import {
 } from "./threeCardIcon.styled";
 import Link from "next/link";
 import { FaHandHoldingMedical } from "react-icons/fa";
-import { GiNurseFemale } from "react-icons/gi";
+import { AiFillMedicineBox } from "react-icons/ai";
 import { GiHealthCapsule } from "react-icons/gi";
 import { SiWorldhealthorganization } from "react-icons/si";
 const ThreeCardIcon: FC = () => {
@@ -17,7 +17,7 @@ const ThreeCardIcon: FC = () => {
       <Wrapper>
         <CardWrapper bgColor="#16425b">
           <Icon>
-            <FaHandHoldingMedical size={80} />
+            <AiFillMedicineBox size={80} />
           </Icon>
           <Description>Médico Especialista en Otorrinolaringología</Description>
           <Link href="/drpuerta">
@@ -26,7 +26,7 @@ const ThreeCardIcon: FC = () => {
         </CardWrapper>
         <CardWrapper bgColor="#3e8a9e">
           <Icon>
-            <GiHealthCapsule size={80} />
+            <FaHandHoldingMedical size={80} />
           </Icon>
           <Description>Excelente Atención Postquirúrgica</Description>
           <Link href="/contacto">
