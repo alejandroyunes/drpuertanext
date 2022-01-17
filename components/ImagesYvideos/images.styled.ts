@@ -7,17 +7,15 @@ interface EstudioProps {
 export const Wrapper = styled.div<EstudioProps>`
   max-width: 100%;
   padding-top: 120px;
-  background-color: ${({ theme, bgColor }) =>
-    bgColor === "white" ? theme.colors.lightBlue : theme.colors.secondary};
 `;
 
 export const Container = styled.div<EstudioProps>`
   max-width: ${({ theme }) => theme.breakpoint.md};
   margin: 0 auto;
   display: flex;
+  outline: 1px solid red;
   padding: 0 24px 32px;
-  background-color: ${({ theme, bgColor }) =>
-    bgColor === "white" ? theme.colors.lightBlue : theme.colors.secondary};
+
   @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
     flex-direction: column;
     padding: 0 16px;
@@ -29,19 +27,9 @@ export const Container = styled.div<EstudioProps>`
 
 export const Column = styled.div`
   margin: 0 auto;
-  max-width: 500px;
   display: flex;
-  flex-direction: row;
-  @media (min-width: ${({ theme }) => theme.breakpoint.sm}) {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .estudios-icon {
-    display: flex;
-    margin: auto 0;
-    align-items: center;
-    padding: 8px 16px 0 0;
-    font-size: 80px;
+  outline: 1px solid red;
+  padding: 24px;
     @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
       font-size: 50px;
     }
@@ -49,9 +37,9 @@ export const Column = styled.div`
 `;
 
 export const Row = styled.div`
-padding: 0;
-height: 300px;
-width: 300px;`;
+padding: 24px;
+outline: 1px solid red;
+`;
 
 export const Icon = styled.div<EstudioProps>`
   display: flex;

@@ -40,7 +40,7 @@ const Procedimientos: FC<EstudioProps> = ({ bgColor }) => {
             </Icon>
             <Title bgColor={backgroundColor}>Rinoplastia Secundaria</Title>
             <Description bgColor={backgroundColor}>
-              La Rinoplastia secundaria o rinoplastia de revisión requiere una
+              La rinoplastia secundaria o rinoplastia de revisión requiere una
               habilidad quirúrgica excepcional y una gran capacidad de análisis.
               Solo cirujanos con un gran entrenamiento y una basta experiencia
               en cirugía nasal pueden mejorar la función respiratoria y los

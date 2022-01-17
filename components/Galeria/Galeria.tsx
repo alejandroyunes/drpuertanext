@@ -5,6 +5,8 @@ import { FaUniversity } from "react-icons/fa";
 import { FcGraduationCap } from "react-icons/fc";
 import { AiFillMedicineBox } from "react-icons/ai";
 import { MdLocalLibrary } from "react-icons/md";
+
+import ImagesYvideos from "components/ImagesYvideos/ImagesYvideos";
 import {
   Wrapper,
   Description,
@@ -24,28 +26,39 @@ const Galeria: FC<EstudioProps> = ({ bgColor }) => {
   const iconColor = "#37474F";
   return (
     <Wrapper bgColor={backgroundColor}>
+      <ImagesYvideos/>
       <Container bgColor={backgroundColor}>
         <Column>
           <Row>
-             <img src="/location-medium-zoom.jpg" alt="" />
+             <img src="/model.jpg" alt="" />
           </Row>
         </Column>
         <Column>
         <Row>
-             <img src="/location-medium-zoom.jpg" alt="" />
+             <img src="/model2.jpg" alt="" />
+        </Row>
+        </Column>
+        <Column>
+        <Row>
+             <img src="/model3.jpg" alt="" />
         </Row>
         </Column>
       </Container>
       <Container bgColor={backgroundColor}>
+      <Column>
+          <Row>
+             <img src="/model.jpg" alt="" />
+          </Row>
+        </Column>
         <Column>
         <Row>
-             <img src="/location-medium-zoom.jpg" alt="" />
+             <img src="/model2.jpg" alt="" />
         </Row>
         </Column>
         <Column>
         <Row>
-             <img src="/location-medium-zoom.jpg" alt="" />
-        </Row>      
+             <img src="/model3.jpg" alt="" />
+        </Row>
         </Column>
       </Container>
     </Wrapper>
