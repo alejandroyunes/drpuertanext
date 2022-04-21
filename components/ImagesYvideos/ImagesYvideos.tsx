@@ -1,6 +1,7 @@
 import { FC } from "react";
 
 import { Wrapper, Column, Row, Container } from "./images.styled";
+import _Button from "components/Button/Button";
 
 const ImagesYvideos: FC = () => {
   return (
@@ -9,10 +10,18 @@ const ImagesYvideos: FC = () => {
         <Container>
           <Column>
             <Row>
-              <p>hola laura</p>
+              <_Button
+                buttonText={"fotos"}
+                link={"/estudio.pdf"}
+                externalLink={true}
+              ></_Button>
             </Row>
             <Row>
-              <p>videos</p>
+              <_Button
+                buttonText={"videos"}
+                link={"/estudio.pdf"}
+                externalLink={true}
+              ></_Button>
             </Row>
           </Column>
         </Container>

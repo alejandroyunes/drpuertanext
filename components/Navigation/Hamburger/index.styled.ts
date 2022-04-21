@@ -36,7 +36,7 @@ export const Menu = styled.div<StyledHeaderProps>`
     margin-bottom: 5px;
     position: relative;
     background: ${({ openMenu, theme }) =>
-      openMenu ? theme.colors.white : theme.colors.darkerGray};
+      openMenu ? theme.colors.white : theme.colors.white};
     border-radius: 2px;
     z-index: 1;
     transform-origin: 4px 0px;

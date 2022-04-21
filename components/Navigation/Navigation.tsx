@@ -2,7 +2,7 @@ import { useEffect, useState, FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Hamburger from "./Hamburger/Hamburger";
-
+import { useRouter } from "next/router";
 import {
   DesktopNav,
   LinksWrapper,
@@ -15,6 +15,8 @@ import {
 } from "./index.styled";
 
 const Navigation: FC = () => {
+  const router = useRouter();
+
   const [header, setHeader] = useState(false);
   const listenScrollEvent = () => {
     if (window.scrollY <= 101) {
@@ -47,7 +49,7 @@ const Navigation: FC = () => {
                   <Image
                     width={160}
                     height={68}
-                    src={`/logo-darker.png`}
+                    src={`/logo-white.png`}
                     alt="Picture of the author"
                   />
                 )}
@@ -56,23 +58,27 @@ const Navigation: FC = () => {
             <Menu openMenu={header}>
               <ul>
                 <Link href="/">
-                  <li>
-                    <a>Inicio</a>
+                  <li className={router.pathname == "/" ? "active" : ""}>
+                    Inicio
                   </li>
                 </Link>
                 <Link href="/drpuerta">
-                  <li>
-                    <a>Dr. Puerta</a>
+                  <li
+                    className={router.pathname == "/drpuerta" ? "active" : ""}
+                  >
+                    Dr. Puerta
                   </li>
                 </Link>
                 <Link href="/galeria">
-                  <li>
-                    <a>Galería</a>
+                  <li className={router.pathname == "/galeria" ? "active" : ""}>
+                    Galería
                   </li>
                 </Link>
                 <Link href="/contacto">
-                  <li>
-                    <a>Contacto</a>
+                  <li
+                    className={router.pathname == "/contacto" ? "active" : ""}
+                  >
+                    Contacto
                   </li>
                 </Link>
               </ul>
@@ -96,7 +102,7 @@ const Navigation: FC = () => {
               <Image
                 width={150}
                 height={60}
-                src={`/logo-darker.png`}
+                src={`/logo-white.png`}
                 alt="Picture of the author"
               />
             )}

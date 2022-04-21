@@ -48,7 +48,7 @@ const Footer: FC = ({}) => {
               Publicaciones
             </Title>
             <Description bgColor={backgroundColor}>
-              <a href="/estudios.pdf"> Estudio publicados por el Dr. Puerta</a>
+              <a href="/estudios.pdf"> Estudio publicado por el Dr. Puerta</a>
             </Description>
           </Column>
           <Column>

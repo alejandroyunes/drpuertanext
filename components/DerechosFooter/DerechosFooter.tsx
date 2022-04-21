@@ -3,8 +3,7 @@ import { FC } from "react";
 import { TitleWrapper } from "./derechos.styled";
 
 const Contact: FC = () => {
-  let date = new Date().getFullYear() 
-  console.log(date)
+  let date = new Date().getFullYear();
   return (
     <>
       <TitleWrapper id="contacto">

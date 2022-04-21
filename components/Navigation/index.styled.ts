@@ -7,7 +7,7 @@ export const DesktopNav = styled.div<StyledHeaderProps>`
   width: 100%;
   /* background-color: ${({ theme }) => theme.colors.transparent}; */
   background-color: ${({ openMenu, theme }) =>
-    openMenu ? theme.colors.darkerGray : `rgba(255, 255, 255, 0.2);`};
+    openMenu ? theme.colors.darkerGray : theme.colors.darkerGray};
   box-shadow: 0 1px 3px rgb(0 0 0 / 15%);
   position: ${({ openMenu }) => (openMenu ? "fixed" : "absolute")};
   animation: ${({ openMenu }) => (openMenu ? "navbar-slice-down 1s" : "none")};
@@ -55,22 +55,42 @@ export const LinksContainer = styled.div`
 export const Menu = styled.div<StyledHeaderProps>`
   display: flex;
   align-items: center;
+
+  .active {
+    color: ${({ theme }) => theme.colors.lightGreen};
+  }
   li {
     display: inline-flex;
+    position: relative;
     padding: 0 12px;
     font-family: ${({ theme }) => theme.fonts.nunito};
     font-size: 18px;
     font-weight: 700;
     color: ${({ openMenu, theme }) =>
-      openMenu ? theme.colors.white : theme.colors.secondary};
+      openMenu ? theme.colors.white : theme.colors.white};
     cursor: pointer;
     span {
       display: flex;
       padding: 0 4px;
     }
-    a:hover {
-      color: ${({ theme }) => theme.colors.primary};
-    }
+  }
+
+  li:hover {
+    color: ${({ theme }) => theme.colors.lightGreen};
+  }
+  li::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: ${({ theme }) => theme.colors.lightGreen};
+  }
+  li::before {
+    width: 0%;
+    bottom: -10px;
+  }
+  li:hover::before {
+    width: 80%;
   }
 `;
 export const ImageMain = styled.div`

@@ -6,9 +6,9 @@ interface EstudioProps {
 
 export const Wrapper = styled.div<EstudioProps>`
   max-width: 100%;
-  padding-top: 120px;
+
   background-color: ${({ theme, bgColor }) =>
-    bgColor === "white" ? theme.colors.lightBlue : theme.colors.secondary};
+    bgColor === "white" ? theme.colors.green : theme.colors.secondary};
 `;
 
 export const Container = styled.div<EstudioProps>`
@@ -17,7 +17,7 @@ export const Container = styled.div<EstudioProps>`
   display: flex;
   padding: 0 24px 32px;
   background-color: ${({ theme, bgColor }) =>
-    bgColor === "white" ? theme.colors.lightBlue : theme.colors.secondary};
+    bgColor === "white" ? theme.colors.green : theme.colors.secondary};
   @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
     flex-direction: column;
     padding: 0 16px;
@@ -49,9 +49,10 @@ export const Column = styled.div`
 `;
 
 export const Row = styled.div`
-padding: 0;
-height: 300px;
-width: 300px;`;
+  padding: 0;
+  height: 300px;
+  width: 300px;
+`;
 
 export const Icon = styled.div<EstudioProps>`
   display: flex;

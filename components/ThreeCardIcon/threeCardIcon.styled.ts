@@ -5,22 +5,12 @@ interface CardProps {
 }
 
 export const Wrapper = styled.div`
-  /* max-width: ${({ theme }) => theme.breakpoint.lg}; */
   margin: 0 auto;
   display: flex;
   background-color: white;
+  height: auto;
   @media (max-width: ${({ theme }) => theme.breakpoint.sm}) {
     flex-direction: column;
-  }
-  a {
-    outline: 1px solid white;
-    display: flex;
-    justify-content: center;
-    max-width: 180px;
-    margin: 10px auto 40px;
-    padding: 4px 0;
-    border-radius: 12px;
-    font-size: ${({ theme }) => theme.fontSizes.lg};
   }
 `;
 
@@ -31,6 +21,13 @@ export const CardWrapper = styled.div<CardProps>`
   width: 100%;
   height: 100%;
   background-color: ${({ bgColor }) => bgColor};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 48px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.md}) {
+    padding-bottom: 32px;
+  }
 `;
 
 export const Icon = styled.div`
